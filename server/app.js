@@ -31,7 +31,7 @@ const dbURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1/simpleMVCExample';
 // that requires it in this project
 mongoose.connect(dbURI).catch((err) => {
   if (err) {
-    console.log('Could not connect to database');
+    // console.log('Could not connect to database');
     throw err;
   }
 });
@@ -86,5 +86,5 @@ app.listen(port, (err) => {
   if (err) {
     throw err;
   }
-  console.log(`Listening on port ${port}`);
+  // console.log(`Listening on port ${port}`);
 });
